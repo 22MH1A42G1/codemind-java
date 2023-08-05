@@ -6,10 +6,8 @@ public class java{
         int a,b,c;
         a = sc.nextInt();
         b = sc.nextInt();
-        a+=b;
-        b=a-b;
-        a=a-b;
+        
         System.out.printf("%d
-%d",a,b);
+%d",b,a);
     }
 }
