@@ -2,10 +2,10 @@ import java.util.Scanner;
 public class climbling{
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
-        int T = s.nextInt(); 
+        int T = s.nextInt();
         for (int i = 0; i < T; i++) {
-            int X = s.nextInt(); 
-            int Y = s.nextInt(); 
+            int X = s.nextInt();
+            int Y = s.nextInt();
             int moves = getMinMoves(X, Y);
             System.out.println(moves);
         }
