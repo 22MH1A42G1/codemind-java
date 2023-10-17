@@ -1,42 +1,29 @@
 import java.util.Scanner;
 public class Pattern {
-
-	public static void innerPattern(int n)
-	{
-
-		int size = 2 * n - 1;
-		int front = 0;
-		int back = size - 1;
-		int a[][] = new int[size][size];
+	public static void main(String[] args){
+	    Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int s = 2 * n - 1;
+		int f = 0;
+		int b = s - 1;
+		int a[][] = new int[s][s];
 		while (n != 0) {
-			for (int i = front; i <= back; i++) {
-				for (int j = front; j <= back;
-										j++) {
-					if (i == front || i == back ||
-						j == front || j == back)
-						a[i][j] = n;
+			for (int i = f; i <= b; i++) {
+				for (int j = f; j <= b;	j++) {
+					if (i == f || i == b || j == f || j == b){
+					    a[i][j] = n;
+					}
 				}
 			}
-			++front;
-			--back;
+			++f;
+			--b;
 			--n;
 		}
-		print(a, size);
-	}
-
-	public static void print(int a[][], int size)
-	{
-		for (int i = 0; i < size; i++) {
-			for (int j = 0; j < size; j++) {
+		for (int i = 0; i < s; i++) {
+			for (int j = 0; j < s; j++) {
 				System.out.print(a[i][j] + " ");
 			}
 			System.out.println();
 		}
-	}
-	public static void main(String[] args)
-	{
-	    Scanner sc = new Scanner(System.in);
-		int n = sc.nextInt();
-		innerPattern(n);
 	}
 }
