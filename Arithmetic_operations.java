@@ -11,10 +11,6 @@ public class java{
         p=a*b;
         q=a/b;
         r=a%b;
-        System.out.printf("Sum:%d
-Difference:%d
-Product:%d
-Quotient:%d
-Remainder:%d",s,d,p,q,r);
+        System.out.printf("Sum:%d%nDifference:%d%nProduct:%d%nQuotient:%d%nRemainder:%d",s,d,p,q,r);
     }
 }
